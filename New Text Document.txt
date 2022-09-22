@@ -1,0 +1,34 @@
+shopping basket>>>>>>>>>>>
+<i class="fa-solid fa-basket-shopping"></i>
+menu>>>>>>>>>>>
+<i class="fa-solid fa-bars"></i>
+search icon>>>>>>>>>>>>>>
+<i class="fa-solid fa-magnifying-glass"></i>
+shopping cart>>>>>>>>
+<i class="fa-solid fa-cart-shopping"></i>
+user>>>>>>>>>
+<i class="fa-solid fa-user"></i>
+trash>>>>>>>>
+<i class="fa-solid fa-trash"></i>
+star>>>>>>>
+<i class="fa-solid fa-star"></i> 
+half star>>>>>>>>
+<i class="fa-solid fa-star-half-stroke"></i>
+calender>>>>>>>
+<i class="fa-solid fa-calendar"></i>
+facecbook>>>>>>>>>
+<i class="fa-brands fa-facebook-f"></i>
+twitter>>>>>>>>>>
+<i class="fa-brands fa-twitter"></i>
+instagram>>>>>>>>>>>
+<i class="fa-brands fa-instagram"></i>
+linkedIn>>>>>>>
+<i class="fa-brands fa-linkedin"></i>
+phone>>>>>>>>>>>>
+<i class="fa-solid fa-phone"></i>
+envelope>>>>>
+<i class="fa-solid fa-envelope"></i>
+location>>>>>>>>>>>>>>>>>>>>>>
+<i class="fa-sharp fa-solid fa-location-dot"></i>
+right arrow>>>>>>>>>>>>>
+<i class="fa-solid fa-arrow-right-long"></i>

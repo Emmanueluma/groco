@@ -1,0 +1,467 @@
+/* this style is universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none; 
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style-type: none;
+    transition: all 0.4s linear;
+}
+/* this style is for the root*/
+:root{
+    --h: 663px;
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+/* font awesome icons size*/
+i {
+    font-size: 2rem;
+}
+/* this is for all the html*/
+html {
+    scroll-behavior: smooth;
+}
+/* this style is body*/
+body {
+    background-color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+}
+/*this for the header declaring the height from the root*/
+header{
+    height:100%;
+}
+/* this style is the nav section of the header section*/
+header .nav {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+/* this style is for the section  of the nav section*/
+header .nav section.logo {
+    width: 123px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+/* declares text color*/
+header .nav section.logo i {
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+/* declares the font size for the text*/
+header .nav section.logo span {
+    color: var(--black);
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+/* just giving the menu a width and font size*/
+header .nav section.menu {
+    width: 550px;
+    font-size: 1.2rem;
+}
+/* the makes it flex and space between*/
+header .nav section.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+/* just changed the behaviour to inline block*/
+header .nav section.menu ul li {
+    display: inline-block;
+}
+header .nav section.menu ul li a {
+    color: var(--black);
+    font-size: 16px;
+    transition: all .3s linear;
+}
+header .nav section.menu ul li a:hover {
+    color: var(--orange);
+}
+/* the section icons seciton*/
+header .nav section.icons {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* giving style to the sections inside the section of nav*/
+header .nav section.icons section {
+    width: 35px; height: 35px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+header .nav section.icons section:hover {
+    background-color: var(--orange);
+}
+/* font awesome font changed*/
+header .nav section.icons section i {
+    color: var(--black);
+    font-size: 1.3rem;
+    transition: all .3s linear;
+}
+header .nav section.icons section:hover i {
+    color: #fff;
+}
+/* the search section that will show onclick*/
+header .comes .search{
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 68vw;
+    z-index: 8888888888;
+    display: none;
+}
+header .comes .search input {
+    width: 400px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+header .comes .search i {
+    position: relative;
+    top: 15px;
+    left: -40px;
+    font-size: 15px;
+}
+/* the list section that will show onclick*/
+header .comes .list {
+    width: 300px;
+    height: 550px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 70vw;
+    border-radius: 10px;
+    z-index: 8888888888;
+    display: none;
+}
+header .comes .list div {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .comes .list div section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .comes .list div section.one {
+    width: 40%;
+    height: 70%;
+}
+header .comes .list div section.one img{
+    width: calc(102.3px + 34.1px + 17.05px);
+    height: calc(70.19px + 23.39px + 11.7px);
+}
+header .comes .list div section.two {
+    width: 55%;
+    height: 70%;
+}
+header .comes .list div section.two .div1 {
+    display: flex;
+    flex-direction: column;
+} 
+header .comes .list div section.two .div1 section {
+    width: 100%;
+    height: 50%;
+}
+header .comes .list div section.two .div1 section.one h1 {
+    font-size: 1.2rem;
+    justify-content: left;
+}
+header .comes .list div section.two .div1 section.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .comes .list div section.two .div1 section.two div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .comes .list div section.two div.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .comes .list div section.two div.div2 i{
+    font-size: 1.4rem;
+    color: var(--black);
+    text-align: center;
+    transition: all 0.3s linear;
+}
+header .comes .list div section.two div.div2 i:hover {
+    color: var(--orange);
+}
+header .comes .list div section .div1 {
+    width: 80%;
+    height: 100%;
+}
+header .comes .list div section .div2 {
+    width: 20%;
+    height: 100%;
+}
+header .comes .list div.four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+header .comes .list div.four section {
+    width: 100%;
+    height: 50%;
+}
+header .comes .list div.four section.two a {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--black);
+    transition: all 0.3s linear;
+}
+header .comes .list div.four section.two a:hover {
+    background-color: var(--orange);
+    color: #fff;
+}
+/* the login section that will show onclick*/
+header section.login {
+    width: 300px;
+    height: 275px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 100vw;
+    border-radius: 10px;
+    z-index: 8888888888;
+    display: none;
+}
+header section.login div {
+    width: 90%;
+    height: 20%;
+}
+header section.login .div1,header section.login .div2 {
+    width: 90%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: #eee;
+}
+header section.login div input {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+header section.login div.div3 {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+header section.login div.div3 a {
+    font-size: 10px;
+    text-decoration: underline;
+    color: var(--orange);
+}
+header section.login div.div4 {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header section.login div.div4 a {
+    padding: 10px 45px;
+    background-color: transparent;
+    border: 2px solid var(--black);
+    border-radius: 7px;
+    color: var(--black);
+    font-size: 1.2rem;
+    transition: all .3s linear;
+}
+header section.login div.div4 a:hover{
+    color: #fff;
+    background-color: var(--orange);
+}
+header section.main {
+    position: relative;
+    top: 0; left: 0;
+    height: 400px;
+    width: 100%;
+    background: url(image/image/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header section.main h1{
+    font-size: 2.3vw;
+    color: var(--black);
+}
+header section.main h1 span {
+    color: var(--orange);
+}
+header section.main p{
+    font-size: 1.15vw;
+    text-align: center;
+    color: var(--light-color);
+}
+header section.main a {
+    padding: 5px 25px;
+    background-color: transparent;
+    border: 2px solid var(--black);
+    border-radius: 7px;
+    color: var(--black);
+    font-size: 1.2vw;
+    margin-top: 20px;
+    transition: all .2s linear;
+}
+header section.main a:hover{
+    color: #fff;
+    background-color: var(--orange);
+}
+
+/* the feature section */
+main section.feature {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main section h1 {
+    font-size: 2.2vw;
+    color: var(--black);
+    font-weight: 600;
+    padding: 2rem 0;
+}
+main section h1 span {
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: 0rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+main section.feature div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 60vh;
+    padding-top: 2%;
+    margin-bottom: 10px;
+}
+main section.feature div section {
+    width: 32%;
+    height: 100%;
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    outline: var(--outline);
+    outline-offset: -10px;
+    transition: all .2s linear;
+    box-shadow: var(--box-shadow);
+}
+main section.feature div section:hover {
+    outline-offset: 0;
+    outline: 2px solid var(--black);
+}
+main section.feature div section div {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+main section.feature div section div img {
+    height: 80%;
+}
+main section.feature div section .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+main section.feature div section .div2 h1 {
+    position: relative;
+    top: -15%;
+    font-size: 1.6vw;
+}
+main section.feature div section .div2 p{
+    text-align: center;
+    font-size: 1vw;
+    position: relative;
+    top: -28%;
+} 
+main section.feature div section .div2 a {
+    position: relative;
+    top: -15%;
+    padding: 3% 15%;
+    background-color: transparent;
+    border: 2px solid var(--black);
+    border-radius: 7px;
+    color: var(--black);
+    font-size: 1.2vw;
+    transition: all .3s linear;
+}
+main section.feature div section .div2 a:hover {
+    color: #fff;
+    background-color: var(--orange);
+}
+/* the  section */
+main section.product {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
