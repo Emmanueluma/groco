@@ -42,7 +42,7 @@ header{
 /* this style is the nav section of the header section*/
 header .nav {
     width: 100%;
-    height: 70px;
+    height: 5vw;
     background-color: #fff;
     position: fixed;
     top: 0; left: 0;
@@ -63,7 +63,7 @@ header .nav section.logo {
 /* declares text color*/
 header .nav section.logo i {
     color: var(--orange);
-    font-size: 1.5rem;
+    font-size: 2vw;
 }
 /* declares the font size for the text*/
 header .nav section.logo span {
@@ -87,7 +87,7 @@ header .nav section.menu ul li {
 }
 header .nav section.menu ul li a {
     color: var(--black);
-    font-size: 16px;
+    font-size: 1.2vw;
     transition: all .3s linear;
 }
 header .nav section.menu ul li a:hover {
@@ -103,7 +103,7 @@ header .nav section.icons {
 }
 /* giving style to the sections inside the section of nav*/
 header .nav section.icons section {
-    width: 35px; height: 35px;
+    width: 2.3vw; height: 2.3vw;
     background-color: #eee;
     display: flex;
     justify-content: center;
@@ -117,7 +117,7 @@ header .nav section.icons section:hover {
 /* font awesome font changed*/
 header .nav section.icons section i {
     color: var(--black);
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     transition: all .3s linear;
 }
 header .nav section.icons section:hover i {
@@ -323,7 +323,7 @@ header section.login div.div4 a:hover{
 header section.main {
     position: relative;
     top: 0; left: 0;
-    height: 400px;
+    height: 29.5vw;
     width: 100%;
     background: url(image/image/banner-bg.webp) no-repeat;
     background-position: center;
@@ -362,7 +362,7 @@ header section.main a:hover{
 }
 
 /* the feature section */
-main section.feature {
+main section {
     height: auto;
     display: flex;
     justify-content: center;
@@ -382,7 +382,7 @@ main section h1 span {
     padding: 0rem 3rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
-main section.feature div {
+main section div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -392,7 +392,7 @@ main section.feature div {
     padding-top: 2%;
     margin-bottom: 10px;
 }
-main section.feature div section {
+main section div section {
     width: 32%;
     height: 100%;
     background-color: #fff; 
@@ -405,39 +405,39 @@ main section.feature div section {
     transition: all .2s linear;
     box-shadow: var(--box-shadow);
 }
-main section.feature div section:hover {
+main section div section:hover {
     outline-offset: 0;
     outline: 2px solid var(--black);
 }
-main section.feature div section div {
+main section div section div {
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-main section.feature div section div img {
-    height: 80%;
+main section div section div img {
+    height: 10vw;
 }
-main section.feature div section .div2 {
+main section div section .div2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-main section.feature div section .div2 h1 {
+main section div section .div2 h1 {
     position: relative;
     top: -15%;
     font-size: 1.6vw;
 }
-main section.feature div section .div2 p{
+main section div section .div2 p{
     text-align: center;
     font-size: 1vw;
     position: relative;
     top: -28%;
 } 
-main section.feature div section .div2 a {
+main section div section .div2 a {
     position: relative;
     top: -15%;
     padding: 3% 15%;
@@ -448,18 +448,51 @@ main section.feature div section .div2 a {
     font-size: 1.2vw;
     transition: all .3s linear;
 }
-main section.feature div section .div2 a:hover {
+main section div section .div2 a:hover {
     color: #fff;
     background-color: var(--orange);
 }
-/* the  section */
-main section.product {
-    text-align: center;
+/* the product section */
+main section.product div{
+    margin-bottom: 1%;
+    min-width: 80%;
+    max-height: 62vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
-
-
-
-
+main section.product div section {
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+main section.product div section:first-child {
+    margin-left: 130vw;
+}
+main section.product div section  div{
+    width: 26.5vw;
+    overflow: hidden;
+}
+main section.product div section  div p {
+    font-size: 1.2vw;
+    color: var(--light-color);
+    padding: 0 1vw;
+}
+/* the catergories section */
+main section.categories {
+    margin-bottom: 3vw;
+}
+main section.categories div {
+    max-height: 62vh;
+}
+main section.categories div section {
+    margin-left: 1vw;
+    border-radius: .4vw;
+}
+main section.categories div section div p {
+    padding: 0 .5vw;
+    font-size: 1.2vw;
+    color: var(--light-color);
+}
+/* the catergories section */
 
 
 
