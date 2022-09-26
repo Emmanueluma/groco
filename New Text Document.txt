@@ -32,3 +32,11 @@ location>>>>>>>>>>>>>>>>>>>>>>
 <i class="fa-sharp fa-solid fa-location-dot"></i>
 right arrow>>>>>>>>>>>>>
 <i class="fa-solid fa-arrow-right-long"></i>
+
+                        <p>my user</p> 
+                        <p>1st May, 2021</p>
+                    </section>
+                    <hr>
+                    <h1>Fresh And Organic Vegitables And Fruits</h1>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                    <a href="#">read more</a>
