@@ -33,7 +33,7 @@ html {
 body {
     background-color: #eee;
     font-family: 'Poppins', sans-serif;
-    font-size: 100%;
+    font-size: 100px;
 }
 /*this for the header declaring the height from the root*/
 header{
@@ -126,6 +126,29 @@ header .nav section.icons section.icon0{
 header .nav section.icons section:hover i {
     color: #fff;
 }
+/* the menu section that will show onclick*/
+header .comes #menu {
+    padding: 1vw;
+    width: 25vw;
+    height: 30vw;
+    background-color: #fff;
+    position: fixed;
+    top: 100px;
+    left: 60vw;
+    z-index: 8888888888;
+    box-shadow: var(--box-shadow);
+    border-radius: .5vw;
+    display: none;
+}
+header .comes #menu li {
+    height: 4.7vw;
+    display: flex;
+    justify-content: flex-start;
+}
+header .comes #menu li a {
+    color: var(--black);
+    font-size: 1rem;
+}
 /* the search section that will show onclick*/
 header .comes .search{
     display: flex;
@@ -137,7 +160,7 @@ header .comes .search{
     display: none;
 }
 header .comes .search input {
-    width: 400px;
+    width: 30vw;
     height: 30px;
     padding: 20px;
     border-radius: 10px;
@@ -150,8 +173,8 @@ header .comes .search i {
 }
 /* the list section that will show onclick*/
 header .comes .list {
-    width: 300px;
-    height: 550px;
+    width: 22vw;
+    height: 35vw;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -163,6 +186,7 @@ header .comes .list {
     box-shadow: var(--box-shadow);
     border-radius: 10px;
     z-index: 8888888888;
+    font-size: 17px;
     display: none;
 }
 header .comes .list div {
@@ -263,8 +287,8 @@ header .comes .list div.four section.two a:hover {
 }
 /* the login section that will show onclick*/
 header section.login {
-    width: 300px;
-    height: 275px;
+    width: 23vw;
+    height: 20vw;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -276,7 +300,11 @@ header section.login {
     box-shadow: var(--box-shadow);
     border-radius: 10px;
     z-index: 8888888888;
+    font-size: .9rem;
     display: none;
+}
+header section.login h1 {
+    font-size: 1.2rem;
 }
 header section.login div {
     width: 90%;
@@ -341,14 +369,14 @@ header section.main {
     flex-direction: column;
 }
 header section.main h1{
-    font-size: 2.3vw;
+    font-size: 30%;
     color: var(--black);
 }
 header section.main h1 span {
     color: var(--orange);
 }
 header section.main p{
-    font-size: 1.2vw;
+    font-size: 15%;
     text-align: center;
     color: var(--light-color);
     line-height: 2vw;
@@ -377,7 +405,7 @@ main section {
     flex-direction: column;
 }
 main section h1 {
-    font-size: 2.2vw;
+    font-size: 25%;
     color: var(--black);
     font-weight: 600;
     padding: 2rem 0;
@@ -423,6 +451,10 @@ main section div section div {
     justify-content: center;
     align-items: flex-end;
 }
+main section div section div.div {
+    background-color: transparent;
+    
+}
 main section div section div img {
     height: 10vw;
 }
@@ -436,11 +468,11 @@ main section div section .div2 {
 main section div section .div2 h1 {
     position: relative;
     top: -15%;
-    font-size: 1.6vw;
+    font-size: 20%;
 }
 main section div section .div2 p{
     text-align: center;
-    font-size: 1vw;
+    font-size: 13%;
     position: relative;
     top: -28%;
 } 
@@ -452,7 +484,7 @@ main section div section .div2 a {
     border: 2px solid var(--black);
     border-radius: 7px;
     color: var(--black);
-    font-size: 1.2vw;
+    font-size: 13%;
     transition: all .3s linear;
 }
 main section div section .div2 a:hover {
@@ -477,11 +509,12 @@ main section.product div section:first-child {
 main section.product div section  div{
     width: 26.5vw;
     overflow: hidden;
-}main section.product div section  div h1{
-    font-size: 1.8vw;
+}
+main section.product div section  div h1{
+    font-size: 25%;
 }
 main section.product div section  div p {
-    font-size: 1.3vw;
+    font-size: 15%;
     color: var(--light-color);
     padding: 0 1vw;
 }
@@ -492,12 +525,12 @@ main section.product div section  div section {
     width: 30%;
     height: 20%;
     outline: none;
-    transform: translateY(-3vw) translateX(-9%);
+    transform: translateY(-2vw);
     background-color: transparent;
     box-shadow: none;
 }
 main section.product div section  div section i {
-    font-size: 1.2vw;
+    font-size: 18%;
     color: var(--orange);
 }
 /* the catergories section */
@@ -513,7 +546,7 @@ main section.categories div section {
 }
 main section.categories div section div p {
     padding: 0 .5vw;
-    font-size: 1.2vw;
+    font-size: 15%;
     color: var(--light-color);
 }
 /* the reviews section */
@@ -549,8 +582,12 @@ main section.reviews .container .box .div2 {
     padding: 2vw 1vw;
     justify-content: space-around;
 }
+main section.reviews .container .box .div2 p {
+    font-size: 13%;
+    transform: translateY(2vw);
+}
 main section.reviews .container .box .div2 h2 {
-    font-size: 1.6vw;
+    font-size: 20%;
 }
 main section.reviews div section  div section {
     background-color: transparent;
@@ -563,7 +600,7 @@ main section.reviews div section  div section {
     transform: translateX(-4%);
 }
 main section.reviews div section  div section i {
-    font-size: 1.2vw;
+    font-size: 15%;
     color: var(--orange);
 }
 /* the blog section */
@@ -603,11 +640,11 @@ main section.blogs .container section .text_hr .text {
     width: 100%;
     height: 80%;
     margin: 0;
-    font-size: 1.2vw;
+    font-size: 15%;
 }
 main section.blogs .container section .text_hr .text i {
     color: var(--orange);
-    font-size: 1.2vw;
+    font-size: 95%;
 }
 main section.blogs .container section .text_hr .hr {
     height: 20%;
@@ -629,18 +666,25 @@ main section.blogs .container section .main_text {
     height: 50%;
     margin: 0;
     padding: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 main section.blogs .container section .main_text h1,
 main section.blogs .container section .main_text p,
-main section.blogs .container section .main_text a {
+main section.blogs .container section .main_text a {    
+    transform: translateY(-3vw);
     padding-left: 5%;
 }
 main section.blogs .container section .main_text h1 {
-    font-size: 1.6vw;
+    font-size: 23%;
+    margin: none;
+    padding: none;
+    height: 5px;
 }
 main section.blogs .container section .main_text p {
-    font-size: 1.1vw;
+    font-size: 15%;
     color: var(--light-color);
 }
 main section.blogs .container section .main_text a{
@@ -649,11 +693,9 @@ main section.blogs .container section .main_text a{
     border: 2px solid var(--black);
     border-radius: 7px;
     color: var(--black);
-    font-size: 1.2vw;
+    font-size: 15%;
+    transform: translateX(-7vw) translateY(-3vw);
     transition: all .3s linear;
-    position: relative;
-    top: 15%;
-    left: 5%;
 }
 main section.blogs .container section .main_text a:hover {
     color: #fff;
@@ -683,13 +725,20 @@ footer .container section {
     height: 80%;
     padding: 1vw;
 }
+footer .container section hr {
+    width: 90%;
+    height: 1%;
+    background-color: red;
+    border-radius: 10px;
+    display: none;
+}
 footer .container section h1 {
     margin-bottom: 1.3vw;
-    font-size: 2vw;
+    font-size: 25%;
     color: var(--black);
 }
 footer .container section h1 i {
-    font-size: 1.7vw;
+    font-size: 100%;
     
 }
 footer .container section.one h1 {
@@ -698,7 +747,7 @@ footer .container section.one h1 {
 footer .container section.one p {
     line-height: 2vw;
     color: var(--light-color);
-    font-size: 1vw;
+    font-size: 10%;
 }
 footer .container section.one section {
     width: 90%;
@@ -725,6 +774,14 @@ footer .container section.one section div:hover {
 footer .container section.one section div:hover i {
     color: #fff;
 }
+footer .container section.one section div a {
+    background-color: transparent;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 footer .container section.one section div i {
     font-size: 2vw;
     color: var(--black);
@@ -742,56 +799,72 @@ footer .container section div {
 footer .container section div p {
     display: flex;
 }
-footer .container section div p i {
-    font-size: 1.1vw;
+footer .container section div p i, footer .container section div p a{
+    font-size: 17%;
 }
 footer .container section div p a {
+    margin-left: .5vw;
     display: block;
-    font-size: 1.1vw;
     color: var(--light-color);
     transition: all .2s linear;
 }
 footer .container section div p a:hover {
     transform: translateX(1.5vw);
 }
+footer .container section section.hr {
+    background-color: red;
+    width: 90%;
+    height: 2%;
+}
+footer .container section.one p{
+    font-size: 15%;
+}
+footer .container section.three {
+    margin-left: 2vw;
+}
 footer .container section.four {
     width: 25%;
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
 }
 footer .container section.four h1{
     margin-bottom: 1vw;
 }
 footer .container section.four p {
     margin-bottom: 1vw;
+    font-size: 15%;
 }
 footer .container section.four div {
     height: 12%;
+    min-height: 20px;
     width: 20vw;
     border-radius: .3vw;
-    margin-bottom: 1.5vw;
     background-color: #eee;
+    margin-bottom: 3vw;
 } 
 footer .container section.four div input {
     width: 10vw;
     height: 2vw;
-    margin-left: 1vw;
+    margin-left: .5vw;
     background-color: transparent;
 }
 footer ::placeholder {
     color: var(--light-color);
-    font-size: 1vw;
+    font-size: 100%;
 }
 footer .container section.four a {
-    margin-top: 1vw;
-    padding: 3% 9%;
+    display: inline-block;
+    padding: 3% 5%;
     background-color: transparent;
     border: 2px solid var(--black);
     border-radius: 7px;
     color: var(--black);
-    font-size: 1vw;
+    font-size: 15%;
     transition: all .3s linear;
-}
-footer .container section.four p {
-    font-size: 1.2vw;
+    transform: translateY(-2vw);
+    align-self: flex-start;
 }
 footer .container section.four a:hover {
     color: #fff;
@@ -800,20 +873,39 @@ footer .container section.four a:hover {
 footer .container section.four div.main {
     width: 70%;
     height: 20%;
-    margin-top: 1vw;
+    transform: translateY(-1vw);
     background-color: transparent;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1100px) {
+    header .nav {
+        height: 6vw;
+    }
     header .nav section.menu ul{
         display: none;
     }
     header .nav section.icons section.icon0{
         display: flex;
     }
+    header .nav section.logo span {
+        font-size: 2vw;
+    }
+    header .comes .search{
+        left: 60vw;
+    }
+    header .comes .list {
+        width: 31vw;
+        height: 38vw;
+        left: 60vw;
+    }
     main section.feature {
         height:100vw;
     }
-    main section.feature div {
+    header #login {
+        width: 29vw;
+        height: 25vw;
+        left: 80vw;
+    }
+    main section.feature div{
         flex-direction: row;
         padding: 1vw;
         width: 100%;
@@ -830,10 +922,263 @@ footer .container section.four div.main {
         width: 40%;
         height: 40vw;
     }
+    header section.main h1 {
+        font-size: 3.2vw;
+    }
+    header section.main p {
+        font-size: 1.6vw
+    }
+    header section.main a {
+        font-size: 2vw;
+        padding: 1vw 4vw;
+    } 
     main section.feature div section div.div1 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    main section.blogs .container section .main_text a {
+        position: relative;
+        top: 1vw;
+        left: 5%;
+    }
+    main section.product div section:first-child {
+        margin-left: 250vw;
+    }
+    main section.product div section {
+        min-width: 40vw;
+        height: 100%;
+    }
+    main section.categories {
+        height: 120vw;
+    }
+    main section.categories div {
+        flex-direction: row;
+        padding: 1vw;
+        width: 100%;
+        height: 100%;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    main section.categories div section {
+        display: flex;
+        justify-content: flex-start;
+        width: 40%;
+        height: 40vw;
+    }
+    main section.categories div section.box3,
+    main section.categories div section.box4 {
+        margin-top: 2vw;
+    }
+    main section.categories div section div.div1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.reviews div section {
+    min-width: 40vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    border-radius: .4vw;
+    }
+    main section h1 span {
+        padding: .5vw 6vw;
+    }
+    main section.blogs {
+        min-height: 55rem;
+        justify-content: flex-start;
+    }
+    main section.blogs .container{
+        display: flex;
+        flex-wrap: wrap; 
+        align-content: space-between;
+
+    }
+    main section.blogs .container section {
+        min-width: 20rem;
+        min-height: 20rem;
+    }
+    footer .container section.one section {
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .container section.one section div {
+        width: 24%;
+        height: 100%;
+    }
     
+    main section.blogs .container section.box3 {
+        margin-top: 5vw;
+    }
+    main section.blogs .container section .main_text p {
+        margin-top: 3vw;
+        font-size: 15%;
+    }
+    footer .container section div p i, footer .container section div p a{
+    font-size: .8rem;
+    }
 }
+@media screen and (max-width: 830px) {
+    header section.nav {
+        height: 50px;
+    }
+    header section.main h1{
+        font-size: 25%;
+        color: var(--black);
+    }
+    header section.main h1 span {
+        color: var(--orange);
+    }
+    header section.main p{
+        font-size: 13%;
+        text-align: center;
+        color: var(--light-color);
+        line-height: 2vw;
+    }
+    main section.product div section {
+        margin-left: 1vw;
+        margin-bottom: 1vw;
+        min-width: 300px;
+    }
+    main section.product div section  div section {
+        transform: translateY(-5vw);
+    }
+    main section.categories {
+        justify-content: flex-start;
+    }
+    main section.categories div section {
+        margin-left: 1vw;
+        border-radius: .4vw;
+        min-width: 300px;
+        min-height: 310px;
+    }
+    main section.blogs {
+        min-height: 74rem;
+    }
+    main section.blogs .container .box2 {
+        margin-top: 3rem;
+    }
+    footer .container{
+        flex-direction: column;
+        height: auto;
+    }
+    footer .container section {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer .container section hr {
+        display: block;
+        width: 95%;
+        height: 1%;
+        background-color: red;
+        border: .1px solid #eee;
+        border-radius: 10px;
+        margin-top: .6vw;
+    }
+    footer .container section h1 {
+        font-size: 25%;
+    }
+    footer .container section.one section {
+        flex-direction: row;
+        margin-top: 2vw;
+    }
+    footer .container section.one section div {
+        width: 40px;
+        height: 50px;
+    }
+    footer .container section.one section div i {
+        font-size: 25%;
+    }
+    footer .container section div p a {
+        font-size: 15%;
+    }
+    footer .container section.three {
+        margin: 0;
+    }
+    footer .container section.four {
+        width: 70%;
+    }
+    footer .container section.four div {
+        width: 50%;
+        height: 30px;
+    }
+    footer .container section.four div input {
+        width: 100%;
+    }
+    footer .container section.four a {
+        margin: 0 auto;
+    }
+    footer .container section.four div.main {
+        width: 60%;
+        height: 50%;
+    }
+    main section.blogs .container section {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    main section.blogs .container section.box1 .div {
+        background: url(image/image/blog-1.jpg);
+        background-position: center;
+        background-size: cover;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    main section.blogs .container section.box2 .div {
+        background: url(image/image/blog-2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    main section.blogs .container section.box3 .div {
+        background: url(image/image/blog-3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    main section.blogs .container section .div img {
+        display: none;
+    }
+}
+@media screen and (max-width: 744px) {
+    main section.feature {
+        height: 900px;
+    }
+    main section.feature div section {
+        min-width: 250px;
+        min-height: 350px;
+    }
+}
+@media screen and (max-width: 632px) {
+    header section.main {
+        height: 200px;
+    }
+    main section.feature {
+        height: 1200px;
+    }
+    main section.feature div section {
+        min-width: 350px;
+        min-height: 350px;
+        margin-top: 10px;
+    }
+    main section.feature div section.box1 {
+        margin-top: 0;
+    }
+    main section.categories {
+        height: 1400px;
+    }
+}
+@media screen and (max-width: 624px) {
+    main section.categories div section {
+        width: 60%;
+    }
+    main section.categories .box2 {
+        margin-top: 10px;
+    }
+
+}
+/* @media screen and (max-width:630px){
+ body{
+    background-color: red;
+ }   
+} */
