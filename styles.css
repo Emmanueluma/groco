@@ -728,7 +728,6 @@ footer .container section {
 footer .container section hr {
     width: 90%;
     height: 1%;
-    background-color: red;
     border-radius: 10px;
     display: none;
 }
@@ -812,7 +811,6 @@ footer .container section div p a:hover {
     transform: translateX(1.5vw);
 }
 footer .container section section.hr {
-    background-color: red;
     width: 90%;
     height: 2%;
 }
@@ -883,6 +881,17 @@ footer .container section.four div.main {
     header .nav section.menu ul{
         display: none;
     }
+    header .nav section.icons {
+        width: 40%;
+        height: 60%;
+    }
+    header .nav section.icons section {
+        width: 23%;
+        height: 100%;
+    }
+    header .nav section.icons section i {
+        font-size: 15%;
+    }
     header .nav section.icons section.icon0{
         display: flex;
     }
@@ -903,7 +912,6 @@ footer .container section.four div.main {
     header #login {
         width: 29vw;
         height: 25vw;
-        left: 80vw;
     }
     main section.feature div{
         flex-direction: row;
@@ -975,6 +983,9 @@ footer .container section.four div.main {
         justify-content: center;
         align-items: center;
     }
+    main section.reviews div section:first-child {
+        margin-left: 90vw;
+    }
     main section.reviews div section {
     min-width: 40vw;
     margin-left: 2vw;
@@ -1007,7 +1018,6 @@ footer .container section.four div.main {
         width: 24%;
         height: 100%;
     }
-    
     main section.blogs .container section.box3 {
         margin-top: 5vw;
     }
@@ -1019,9 +1029,42 @@ footer .container section.four div.main {
     font-size: .8rem;
     }
 }
+@media screen and (max-width: 828px) {
+    main section.reviews div section:first-child {
+        margin-left: 90vw;
+    }
+    main section.reviews div section div{
+        overflow: hidden;
+    }
+    main section.reviews div section div img {
+        border-radius: 50%;
+    }
+    main section.reviews .container .box .div2 {
+        display: flex;
+        padding: 2vw 1vw;
+        justify-content: space-around;
+    }
+    main section.reviews .container .box .div2 p {
+        transform: translateY(5vw);
+    }
+}
 @media screen and (max-width: 830px) {
+    header .nav section.logo i, 
+    header .nav section.logo span {
+        font-size: 15%;
+    }
+    header .nav section.icons section.icon2,header .nav section.icons section.icon3 {
+        display: none;
+    }
+    header #login {
+        width: 250px;
+        height: 200px;
+    }
     header section.nav {
         height: 50px;
+    }
+    header section.main {
+        height: 400px;
     }
     header section.main h1{
         font-size: 25%;
@@ -1069,11 +1112,13 @@ footer .container section.four div.main {
         align-items: center;
         flex-direction: column;
     }
+    footer ::placeholder {
+        font-size: 13px;
+    }
     footer .container section hr {
         display: block;
         width: 95%;
         height: 1%;
-        background-color: red;
         border: .1px solid #eee;
         border-radius: 10px;
         margin-top: .6vw;
@@ -1106,7 +1151,8 @@ footer .container section.four div.main {
         height: 30px;
     }
     footer .container section.four div input {
-        width: 100%;
+        width: 90%;
+        height: 50%;
     }
     footer .container section.four a {
         margin: 0 auto;
@@ -1141,6 +1187,10 @@ footer .container section.four div.main {
     }
 }
 @media screen and (max-width: 744px) {
+    main section div section div img {
+    width: 50%;
+    height: 60%;
+}
     main section.feature {
         height: 900px;
     }
@@ -1148,10 +1198,13 @@ footer .container section.four div.main {
         min-width: 250px;
         min-height: 350px;
     }
+    main section.product div section:first-child {
+        margin-left: 2020px;
+    }
 }
 @media screen and (max-width: 632px) {
     header section.main {
-        height: 200px;
+        height: 300px;
     }
     main section.feature {
         height: 1200px;
@@ -1167,6 +1220,9 @@ footer .container section.four div.main {
     main section.categories {
         height: 1400px;
     }
+    footer div section.one p span {
+        display:none;
+    }
 }
 @media screen and (max-width: 624px) {
     main section.categories div section {
@@ -1176,9 +1232,67 @@ footer .container section.four div.main {
         margin-top: 10px;
     }
 
+} 
+@media screen and (max-width: 500px) {
+    main section.reviews .container .box .div2 p {
+        transform: translateY(10vw);
+    }
 }
-/* @media screen and (max-width:630px){
- body{
-    background-color: red;
- }   
-} */
+@media screen and (max-width: 450px) {
+    main section.reviews .container .box .div2 p {
+        transform: translateY(9vw);
+    }
+}
+@media screen and (max-width: 400px) {
+    header section.nav {
+        height: 70px;
+    }
+    header section.nav section.logo {
+        margin-left: 4vw;
+    }
+    header section.nav section.logo i,
+    header section.nav section.logo span {
+        font-size: 1.3rem;
+    }
+    header section.nav section.logo span {
+        margin-left: 2vw;
+    }
+    header section.nav section.icons {
+        width: 230px;
+        margin-right: 4vw;
+    }
+    header section.nav section.icons section {
+        width: 40%;
+        height: 90%;
+    }
+    header section.main {
+        background-color: transparent;
+    }
+    header section.main h1 {
+        font-size: 1.3rem;
+    }
+    header section.main p {
+        font-size: .7rem;
+    }
+    header section.main a {
+        font-size: 1rem;
+    }
+    main section.product div section:first-child {
+        margin-left: 2115px;
+    }
+    main section.blogs .container section .main_text p {
+        margin-top: 4vw;
+        font-size: .8rem;
+    }
+    footer .container section{
+        width: 90%;
+        align-items: flex-start;
+    }
+    footer .container section.four {
+        align-items: flex-start;
+        width: 90%;
+    }
+    footer .container section.four a {
+        margin: 0;
+    }
+}

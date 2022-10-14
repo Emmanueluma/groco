@@ -38,7 +38,7 @@
         }
         else{
             login.style.display = "flex"
-            login.style.left = "70vw"
+            login.style.left = "60vw"
         }
     }
 }) ()
