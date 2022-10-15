@@ -29,9 +29,6 @@ i {
 html {
     scroll-behavior: smooth;
 }
-head title {
-    text-transform: uppercase;
-}
 /* this style is body*/
 body {
     background-color: #eee;
@@ -668,11 +665,12 @@ main section.blogs .container section .main_text {
     width: 100%;
     height: 50%;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    line-height: 1.3rem;
 }
 main section.blogs .container section .main_text h1,
 main section.blogs .container section .main_text p,
@@ -682,8 +680,6 @@ main section.blogs .container section .main_text a {
 }
 main section.blogs .container section .main_text h1 {
     font-size: 23%;
-    margin: none;
-    padding: none;
     height: 5px;
 }
 main section.blogs .container section .main_text p {
@@ -1237,16 +1233,6 @@ footer .container section.four div.main {
 
 } 
 @media screen and (max-width: 500px) {
-    main section.reviews .container .box .div2 p {
-        transform: translateY(10vw);
-    }
-}
-@media screen and (max-width: 450px) {
-    main section.reviews .container .box .div2 p {
-        transform: translateY(9vw);
-    }
-}
-@media screen and (max-width: 400px) {
     header section.nav {
         height: 70px;
     }
@@ -1268,8 +1254,8 @@ footer .container section.four div.main {
         width: 40%;
         height: 90%;
     }
-    header section.main {
-        background-color: transparent;
+    main section.reviews .container .box .div2 p {
+        transform: translateY(10vw);
     }
     header section.main h1 {
         font-size: 1.3rem;
@@ -1280,12 +1266,11 @@ footer .container section.four div.main {
     header section.main a {
         font-size: 1rem;
     }
-    main section.product div section:first-child {
-        margin-left: 2115px;
+    main section.product div section div section {
+        transform: translateY(-8vw);
     }
-    main section.blogs .container section .main_text p {
-        margin-top: 4vw;
-        font-size: .8rem;
+    main section.feature div section {
+        min-width: 320px;
     }
     footer .container section{
         width: 90%;
@@ -1295,7 +1280,40 @@ footer .container section.four div.main {
         align-items: flex-start;
         width: 90%;
     }
+    footer .container section.one p {
+        font-size: .9rem;
+    }
     footer .container section.four a {
         margin: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    main section.reviews .container .box .div2 p {
+        transform: translateY(9vw);
+    }
+}
+@media screen and (max-width: 429px) {
+    footer .container section.one p {
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    header section.main {
+        background-color: transparent;
+    }
+    main section.product div section:first-child {
+        margin-left: 2115px;
+    }
+    main section.blogs .container section .main_text p {
+        margin-top: 4vw;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 369px) {
+    body {
+        background-color: red;
+    }
+    header section.main h1 {
+        font-size: 1.1rem;
     }
 }
