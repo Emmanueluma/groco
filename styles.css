@@ -1254,6 +1254,9 @@ footer .container section.four div.main {
         width: 40%;
         height: 90%;
     }
+    main section.product div section:first-child {
+        margin-left: 2115px;
+    }
     main section.reviews .container .box .div2 p {
         transform: translateY(10vw);
     }
@@ -1290,6 +1293,9 @@ footer .container section.four div.main {
 @media screen and (max-width: 450px) {
     header section.main h1 {
         font-size: 1.1rem;
+    }
+    header section.main p {
+        font-size: .8rem;
     }
     main section.reviews .container .box .div2 p {
         transform: translateY(9vw);
