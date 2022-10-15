@@ -1288,6 +1288,9 @@ footer .container section.four div.main {
     }
 }
 @media screen and (max-width: 450px) {
+    header section.main h1 {
+        font-size: 1.1rem;
+    }
     main section.reviews .container .box .div2 p {
         transform: translateY(9vw);
     }
@@ -1307,13 +1310,5 @@ footer .container section.four div.main {
     main section.blogs .container section .main_text p {
         margin-top: 4vw;
         font-size: .8rem;
-    }
-}
-@media screen and (max-width: 369px) {
-    body {
-        background-color: red;
-    }
-    header section.main h1 {
-        font-size: 1.1rem;
     }
 }
