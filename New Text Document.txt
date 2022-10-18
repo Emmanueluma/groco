@@ -22,6 +22,8 @@ twitter>>>>>>>>>>
 <i class="fa-brands fa-twitter"></i>
 instagram>>>>>>>>>>>
 <i class="fa-brands fa-instagram"></i>
+greater than>>>>>>>>>>>
+<i class="fa-solid fa-arrow-right"></i>
 linkedIn>>>>>>>
 <i class="fa-brands fa-linkedin"></i>
 phone>>>>>>>>>>>>
