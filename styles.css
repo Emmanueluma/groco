@@ -492,13 +492,12 @@ main section div section .div2 a:hover {
     background-color: var(--orange);
 }
 /* the product section */
-main section.product div.container{
+main section.product div{
     margin-bottom: 1%;
     min-width: 80%;
     max-height: 62vh;
     overflow-y: hidden;
     overflow-x: scroll;
-    box-shadow: 20px 0px 10px #ddd;
 }
 main section.product div section {
     margin-left: 1vw;
@@ -1399,7 +1398,6 @@ footer .container section.four div.main {
 }
 @media screen and (max-width: 309px) {
     header section.main h1 {
-        background-color: red;
         font-size: 1rem;
     }
 }
