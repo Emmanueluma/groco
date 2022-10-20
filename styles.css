@@ -492,12 +492,13 @@ main section div section .div2 a:hover {
     background-color: var(--orange);
 }
 /* the product section */
-main section.product div{
+main section.product div.container{
     margin-bottom: 1%;
     min-width: 80%;
     max-height: 62vh;
     overflow-y: hidden;
     overflow-x: scroll;
+    box-shadow: 20px 0px 10px #ddd;
 }
 main section.product div section {
     margin-left: 1vw;
@@ -585,6 +586,7 @@ main section.reviews .container .box .div2 {
 main section.reviews .container .box .div2 p {
     font-size: 13%;
     transform: translateY(2vw);
+    padding: 0 5px 0 5px;
 }
 main section.reviews .container .box .div2 h2 {
     font-size: 20%;
@@ -665,35 +667,46 @@ main section.blogs .container section .main_text {
     width: 100%;
     height: 50%;
     margin: 0;
-    padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 1.3rem;
+    box-sizing:border-box;
 }
-main section.blogs .container section .main_text h1,
-main section.blogs .container section .main_text p,
-main section.blogs .container section .main_text a {    
-    transform: translateY(-3vw);
-    padding-left: 5%;
+main section.blogs .container section .main_text div {
+    margin: 0; 
+    padding: 0;
+    padding-left: 10px;
 }
-main section.blogs .container section .main_text h1 {
-    font-size: 23%;
-    height: 5px;
+main section.blogs .container section .main_text div.h1 {
+    display: block;
+    height: 24%;
 }
-main section.blogs .container section .main_text p {
-    font-size: 15%;
-    color: var(--light-color);
+main section.blogs .container section .main_text div.p  {
+    display: block;
+    height: 45%;
 }
-main section.blogs .container section .main_text a{
+main section.blogs .container section .main_text div.a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+main section.blogs .container section .main_text div.h1 h1 {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+main section.blogs .container section .main_text div.p p {
+    font-size: 1rem;
+    margin: 0;
+    padding-left: 10px;
+}
+main section.blogs .container section .main_text  div.a a{
+    margin-top: 0;
     padding: 3% 9%;
     background-color: transparent;
     border: 2px solid var(--black);
     border-radius: 7px;
     color: var(--black);
     font-size: 15%;
-    transform: translateX(-7vw) translateY(-3vw);
     transition: all .3s linear;
 }
 main section.blogs .container section .main_text a:hover {
@@ -746,6 +759,7 @@ footer .container section.one p {
     line-height: 2vw;
     color: var(--light-color);
     font-size: 10%;
+    line-height: 1rem;
 }
 footer .container section.one section {
     width: 90%;
@@ -821,6 +835,9 @@ footer .container section section.hr {
 }
 footer .container section.one p{
     font-size: 15%;
+}
+footer .container section.two p i {
+    margin-right: 3px;
 }
 footer .container section.three {
     margin-left: 2vw;
@@ -950,11 +967,6 @@ footer .container section.four div.main {
         justify-content: center;
         align-items: center;
     }
-    main section.blogs .container section .main_text a {
-        position: relative;
-        top: 1vw;
-        left: 5%;
-    }
     main section.product div section:first-child {
         margin-left: 250vw;
     }
@@ -963,7 +975,10 @@ footer .container section.four div.main {
         height: 100%;
     }
     main section.categories {
-        height: 120vw;
+        height: 100vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     main section.categories div {
         flex-direction: row;
@@ -992,27 +1007,33 @@ footer .container section.four div.main {
         margin-left: 90vw;
     }
     main section.reviews div section {
-    min-width: 40vw;
-    margin-left: 2vw;
-    margin-bottom: 2vw;
-    border-radius: .4vw;
+        min-width: 40vw;
+        margin-left: 2vw;
+        margin-bottom: 2vw;
+        border-radius: .4vw;
     }
     main section h1 span {
         padding: .5vw 6vw;
     }
     main section.blogs {
-        min-height: 55rem;
+        min-height: 65rem;
         justify-content: flex-start;
     }
     main section.blogs .container{
         display: flex;
         flex-wrap: wrap; 
-        align-content: space-between;
-
     }
     main section.blogs .container section {
         min-width: 20rem;
-        min-height: 20rem;
+        min-height: 23rem;
+    }
+    main section.blogs .container section .main_text div.p {
+        margin: 2% 0 1% 0;
+        padding-left: 0px;
+        height: 50%;
+    }
+    main section.blogs .container section .main_text div.a {
+        padding-left: 10px;
     }
     footer .container section.one section {
         width: 180px;
@@ -1031,7 +1052,7 @@ footer .container section.four div.main {
         font-size: 15%;
     }
     footer .container section div p i, footer .container section div p a{
-    font-size: .8rem;
+        font-size: .8rem;
     }
 }
 @media screen and (max-width: 828px) {
@@ -1117,7 +1138,7 @@ footer .container section.four div.main {
         min-height: 310px;
     }
     main section.blogs {
-        min-height: 74rem;
+        min-height: 64rem;
     }
     main section.blogs .container .box2 {
         margin-top: 3rem;
@@ -1186,24 +1207,29 @@ footer .container section.four div.main {
         border-top-left-radius: 10px;
     }
     main section.blogs .container section.box1 .div {
-        background: url(image/image/blog-1.jpg);
+        background: url(image/image/rice.webp);
         background-position: center;
         background-size: cover;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
     }
     main section.blogs .container section.box2 .div {
-        background: url(image/image/blog-2.jpg);
+        background: url(image/image/fishAndMeat.jpg);
         background-position: center;
         background-size: cover;
     }
     main section.blogs .container section.box3 .div {
-        background: url(image/image/blog-3.jpg);
+        background: url(image/image/pepper.jpg);
         background-position: center;
         background-size: cover;
     }
     main section.blogs .container section .div img {
         display: none;
+    }
+}
+@media screen and (max-width: 766px) {
+    main section.blogs {
+        min-height: 84rem;
     }
 }
 @media screen and (max-width: 744px) {
@@ -1332,6 +1358,20 @@ footer .container section.four div.main {
         transform: translateY(9vw);
     }
 }
+@media screen and (max-width: 430px) {
+    main section.reviews .container .box {
+        min-width: 15rem;
+    }
+    main section.reviews div section:first-child {
+        margin-left: 45rem;
+    }
+    main section.reviews .container .box .div2 p {
+        transform: translateY(9vw);
+    }
+    main section.reviews .container .box2 .div2 p {
+        transform: translateY(40px);
+    }
+}
 @media screen and (max-width: 429px) {
     footer .container section.one p {
         font-size: .7rem;
@@ -1350,6 +1390,17 @@ footer .container section.four div.main {
     main section.blogs .container section .main_text p {
         margin-top: 4vw;
         font-size: .8rem;
+    }
+}
+@media screen and (max-width: 382px) {
+    header section.main p{
+        line-height: 1.2rem;
+    }
+}
+@media screen and (max-width: 309px) {
+    header section.main h1 {
+        background-color: red;
+        font-size: 1rem;
     }
 }
 
