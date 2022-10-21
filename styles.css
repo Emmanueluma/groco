@@ -813,6 +813,9 @@ footer .container section div p {
 footer .container section div p i, footer .container section div p a{
     font-size: 17%;
 }
+footer #num {
+    font-size: 1rem;
+}
 footer #p {
     font-size: 17%;
 }
@@ -1099,6 +1102,7 @@ footer .container section.four div.main {
     }
     header .comes .search input {
         width: 340px;
+
     }
     header section.nav {
         height: 50px;
