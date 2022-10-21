@@ -7,8 +7,7 @@
     const list = document.getElementById('list');
     const login = document.getElementById('login');
     const menu = document.getElementById('menu');
-    const main = document.getElementsByTagName('body')[0];
-
+    
     icon0.onclick = () => {
         if (menu.style.display == "flex") {
                 menu.style.display = "none"

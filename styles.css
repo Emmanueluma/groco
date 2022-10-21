@@ -690,6 +690,7 @@ main section.blogs .container section .main_text div.a {
 }
 main section.blogs .container section .main_text div.h1 h1 {
     font-size: 1.3rem;
+    line-height: 1.1rem;
     margin: 0;
     padding: 0;
 }
@@ -749,7 +750,6 @@ footer .container section h1 {
 }
 footer .container section h1 i {
     font-size: 100%;
-    
 }
 footer .container section.one h1 {
     margin-bottom: 1vw;
@@ -1226,7 +1226,7 @@ footer .container section.four div.main {
         display: none;
     }
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 784px) {
     main section.blogs {
         min-height: 84rem;
     }
@@ -1372,6 +1372,9 @@ footer .container section.four div.main {
     }
 }
 @media screen and (max-width: 429px) {
+    header section.main p{
+        line-height: 1.2rem;
+    }
     footer .container section.one p {
         font-size: .7rem;
     }
@@ -1391,14 +1394,19 @@ footer .container section.four div.main {
         font-size: .8rem;
     }
 }
-@media screen and (max-width: 382px) {
-    header section.main p{
-        line-height: 1.2rem;
-    }
-}
 @media screen and (max-width: 309px) {
     header section.main h1 {
         font-size: 1rem;
+    }
+}
+@media screen and (max-width: 330px) {
+    main section.feature .container .box {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 290px) {
+    header section.main h1 {
+        font-size: .9rem;
     }
 }
 
