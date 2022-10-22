@@ -1469,10 +1469,10 @@ footer .container section.four div.main {
     /* main section.feature .container .box {
         width: 80%;
     } */
-    main section.feature div.container section {
-        width: 100px;
+    main section.feature div.container section,
+    main section.blogs .container section  {
+        min-width: 280px;
     }
-    
 }
 @media screen and (max-width: 290px) {
     header section.main h1 {
