@@ -47,7 +47,7 @@ body div.center {
     min-height: 100vh;
     background-color: #000;
     z-index: 9999999;
-    transition: 07.2s;
+    transition: .72s;
 }
 body div.centerHidden {
     opacity:  0;
