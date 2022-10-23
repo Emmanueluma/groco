@@ -949,6 +949,7 @@ footer .container section.four a {
     transition: all .3s linear;
     transform: translateY(-2vw);
     align-self: flex-start;
+    cursor: pointer;
 }
 footer .container section.four a:hover {
     color: #fff;
