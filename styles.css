@@ -120,7 +120,16 @@ header .nav section.logo {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    animation: brand 2s ease-in 1 ;
+}
+@keyframes brand {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+    }
 }
 /* declares text color*/
 header .nav section.logo i {
@@ -137,6 +146,17 @@ header .nav section.logo span {
 header .nav section.menu {
     width: 550px;
     font-size: 1.2rem;
+    opacity: 0;
+    animation: menu 1s ease-in forwards 3s ;
+}
+@keyframes menu {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+    }
 }
 /* the makes it flex and space between*/
 header .nav section.menu ul {
@@ -162,6 +182,16 @@ header .nav section.icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    animation: icons 2s ease-in 1 ;
+}
+@keyframes icons {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+    }
 }
 /* giving style to the sections inside the section of nav*/
 header .nav section.icons section {
@@ -433,15 +463,29 @@ header section.main {
 header section.main h1{
     font-size: 30%;
     color: var(--black);
+    animation: header 2s ease-in 1;
 }
 header section.main h1 span {
     color: var(--orange);
+}
+@keyframes header {
+    0% {
+        opacity: 0;
+        transform: translate(0,-50px);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 header section.main p{
     font-size: 15%;
     text-align: center;
     color: var(--light-color);
     line-height: 2vw;
+    animation: header 2.5s ease-in 1 ;;
 }
 header section.main a {
     padding: 5px 25px;
@@ -452,6 +496,7 @@ header section.main a {
     font-size: 1.2vw;
     margin-top: 20px;
     transition: all .2s linear;
+    animation: header 3s ease-in 1 ;
 }
 header section.main a:hover{
     color: #fff;
