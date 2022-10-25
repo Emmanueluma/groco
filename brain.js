@@ -9,10 +9,10 @@
     const menu = document.getElementById('menu');
     const main = document.body.getElementsByClassName('center')[0];
     
-    window.addEventListener('load', e => {
+    /* window.addEventListener('load', e => {
         main.classList.add('centerHidden');
     })
-    
+     */
     icon0.onclick = () => {
         if (menu.style.display == "flex") {
                 menu.style.display = "none"
